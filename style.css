@@ -1,0 +1,380 @@
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-bar {
+    background-color: #EEEEEE;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+#header-img {
+    width: 90%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#nav-bar > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 0px;
+}
+
+#nav-bar > ul > li > a {
+    
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#nav-bar > ul > li {
+    list-style: none;
+    padding: 3px;
+    margin: 0;
+}
+
+main > #form-section {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    margin: auto;
+    margin-top: 240px;
+    margin-bottom: 60px;
+    
+}
+
+
+#form-section > h2 {
+    font-size: 7vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#email {
+    width: 90%;
+    padding: 5px;
+}
+
+#email, #submit {
+    margin-top: 20px;
+}
+
+#submit {
+    width: 200px;
+    background-color: #F1C40F;
+    font-weight: 750;
+    border: none;
+    border-radius: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#features {
+    width: 80%;
+    margin-bottom: 50px;
+    
+}
+
+.icon-div {
+    display: grid;
+    grid-template-columns: 60px auto;
+}
+
+.div-icon {
+    font-size: 2.3rem;
+    color: #FF8C00;
+}
+.text {
+    padding-top: 7px;
+}
+
+.text > h2 {
+    font-size: 7vw;
+}
+.text > p {
+    font-size: 4vw;
+}
+
+#how-it-works {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+iframe {
+    width: 95%;
+}
+
+#pricing {
+    width: 90%;
+    z-index: -10;
+}
+
+.card {
+    margin: 30px auto;
+    border: 1px solid black;
+}
+
+.card-header {
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 700;
+    padding: 18px;
+    background-color: #DDDDDD;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body > h5 {
+    font-size: 7vw;
+}
+
+.card-body > p {
+    font-size: 5vw;
+    margin: 0;
+    padding: 3px;
+}
+
+.btn {
+    width: 140px;
+    font-size: 6vw;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+footer {
+    
+    background-color: #DDDDDD;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px;
+    padding: 0;
+}
+
+footer > ul > li > a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    
+}
+
+footer > ul > li {
+    list-style: none;
+    padding: 0px 9px;
+}
+
+.copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 4vw;
+}
+
+@media (min-width: 400px) {
+
+    #nav-bar > ul > li > a {
+        font-size: 1.1rem;
+    }
+    
+    #header-img {
+        max-width: 300px; 
+    }
+
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100px;
+    }
+
+    #nav-bar > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-top: 19px;
+    }
+
+    #nav-bar > ul > li {
+        padding: 10px;
+    }
+
+    .icon-div {
+        grid-template-columns: 70px auto;
+        min-height: 150px;
+    }
+
+    .div-icon {
+        font-size: 2.6rem;
+    }
+   
+    .text > h2 {
+        font-size: 1.7rem;
+    }
+    .text > p {
+        font-size: 1.1rem;
+    }
+
+    #email {
+        max-width: 400px;
+    }
+
+    main > #form-section {
+        margin-top: 150px;
+    }
+
+    #form-section > h2 {
+        font-size: 1.7rem;
+    }
+
+    #how-it-works {
+        width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        width: 80%;
+        height: 400px;
+    }
+
+    .card {
+        max-width: 400px;
+    }
+
+    .card-header {
+        font-size: 1.8rem;
+    }
+    
+    .card-body {
+        text-align: center;
+    }
+    
+    .card-body > h5 {
+        font-size: 2rem;
+    }
+    
+    .card-body > p {
+        font-size: 1.2rem;
+    }
+    
+    .btn {
+        width: 140px;
+        font-size: 1.2rem;
+
+    }
+    
+    footer > ul > li > a {
+        font-size: 1.5rem;
+    }
+    
+    footer > ul > li {
+        list-style: none;
+        padding: 0px 19px;
+    }
+    
+    .copyright {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    #nav-bar > ul > li > a {
+        font-size: 1.4rem;
+    }
+
+    #header-img {
+        max-width: 350px; 
+    }
+
+    main > #form-section {
+        margin-top: 200px;
+    }
+
+    #form-section > h2 {
+        font-size: 2rem;
+    }
+
+    #email {
+        max-width: 500px;
+    }
+
+    #submit {
+        font-size: 1.5rem;
+        padding: 7px;
+        
+    }
+
+    .icon-div {
+        grid-template-columns: 100px auto;
+    }
+    
+    .div-icon {
+        font-size: 3.3rem;
+    }
+
+    #pricing {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-header {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        width: 850px;
+        height: 470px;
+    }
+    
+    .card {
+        flex-basis: 300px;
+    }
+}
